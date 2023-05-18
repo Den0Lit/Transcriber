@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="navigation">
+          <div style="position: absolute;
+          top: 20px;
+          right: 20px;
+          height: 60px;
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+          color: #fff;
+          background-color: var(--primary-color)"><a href="main.html" class ="btn">Назад</a></div>
+          <p class="heading">Transcriber</p>
+      <div class="options">
+        <div class="anguage">
+          <p>Выберите язык :</p>
+          <select name="input-language" id="language"></select>
+        </div>
+      </div>
+      <pre>
+         
+      </pre>
+      <button class="btn record">
+        <div class="icon">
+          <ion-icon name="mic-outline"></ion-icon>
+          <img src="bars.svg" alt="" />
+        </div>
+        <p>Начать запись</p>
+      </button>
+      <p class="heading">Результат :</p>
+      <div
+        class="result"
+        spellcheck="false"
+        placeholder="Text will be shown here" style="width: 100%;
+        min-height: 200px;
+        padding: 10px;
+        border: 1px solid var(--light-text-color);
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: var(--text-color);
+        overflow: auto;
+        max-height: 200px;
+        "><p class="interim"></p>
+      </div>
+      <div class="btn-group">
+        <button class="btn clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Очистить</p>
+        </button>
+        <button class="btn download" >
+          <p>Загрузить</p>
+        </button>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <script src="languages.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

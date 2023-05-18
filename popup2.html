@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+    <body>
+      <div class="container">
+        <div class="navigation">
+          <p class="heading">Transcriber</p>
+          <div style="position: absolute;
+          top: 20px;
+          right: 20px;
+          height: 20px;
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+          color: #fff;
+          background-color: var(--primary-color)"><a href="main.html" class ="btn">Назад</a></div>
+            <div class="options">
+              <p>Введита свой ключ API:</p>
+            </div>
+    <button id="options" class="btn">API ключ</button>
+    <div id="controls">
+      <button id="start" class="btn">Начать запись</button>
+    </div>
+  <p class="heading">Результат :</p>
+      <div class="final"
+        spellcheck="false"
+        placeholder="Text will be shown here">
+        <!-- <p class="interim"></p> -->
+        <p id="transcript"></p>
+      </div>
+      <div id="controls" class="btn-group">
+        <button id="clear" class="btn">Очистить</button>
+        <button id="downloadBtn" class="btn" >Загрузить</button>
+      </div>
+    <!-- <p id="transcript"></p> -->
+
+    <!-- SCRIPT -->
+    <script src="popup2.js"></script>
+
+    <!-- <script>
+      // Отправляем запрос в фоновый скрипт
+      chrome.runtime.sendMessage({ action: 'getCurrentTab' }, (response) => {
+        console.log(response.tab);
+      });
+    </script> -->
+
+    <!-- <script src="background.js"></script> -->
+    <!-- SCRIPT -->
+    <!-- <script src="options.js"></script> -->
+
+    <!-- SCRIPT -->
+    <!-- <script src="contentscript.js"></script> -->
+
+  </body>
+</html>
